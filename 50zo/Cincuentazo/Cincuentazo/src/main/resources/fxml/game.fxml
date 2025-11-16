@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cincuentazo.controller.GameController" fx:id="rootPane" onKeyPressed="#onKeyPressed" prefWidth="800" prefHeight="600" style="-fx-background-color: radial-gradient(radius 120%, #1f2833, #0b0c10);">
+  <top>
+    <HBox spacing="20" alignment="CENTER" style="-fx-padding: 15; -fx-background-color: rgba(0,0,0,0.35);">
+      <Label fx:id="tableSumLabel" text="Table sum: 0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #f8f8f8;"/>
+      <Label fx:id="statusLabel" text="Status" style="-fx-text-fill: #f1c40f;"/>
+      <Button fx:id="backButton" text="Menú" onAction="#onBack" style="-fx-background-color: transparent; -fx-text-fill: #ffffff; -fx-border-color: #ffffff; -fx-border-radius: 16; -fx-background-radius: 16; -fx-padding: 4 10;"/>
+    </HBox>
+  </top>
+  <center>
+    <VBox spacing="10" alignment="CENTER" style="-fx-padding: 20; -fx-background-color: rgba(255,255,255,0.03); -fx-background-radius: 16; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 30, 0, 0, 12);">
+      <HBox fx:id="tableBox" spacing="5" />
+    </VBox>
+  </center>
+  <bottom>
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 15 20; -fx-background-color: rgba(0,0,0,0.45);">
+      <HBox fx:id="playerHandBox" spacing="8"/>
+    </HBox>
+  </bottom>
+</BorderPane>
